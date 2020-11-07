@@ -6,6 +6,14 @@ from projectile import Projectile
 
 class Player(pygame.sprite.Sprite):
 
+	'''
+        Esta classe implementa o jogador principal.
+		Seu objetivo é sobreviver o máximo que puder.
+		Para isso ele deve se livar das múmias atirando 
+		um projétil nelas e evitando ser atingindo pela
+		chuva de meteoros.
+    '''
+
 	def __init__(self, game):
 		super().__init__()
 		self.game			 = game
@@ -46,8 +54,6 @@ class Player(pygame.sprite.Sprite):
 
 			if self.health <= 0: self.game.game_over()
 
-		else:
-			self.game.game_over()
 
 	def update_health_bar(self, surface):
 		bar_color = (111, 210, 46)

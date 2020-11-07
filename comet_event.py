@@ -6,6 +6,12 @@ from pygame import mixer
 
 class CometFallEvent:
 
+    '''
+        Esta classe implementa o mecanismo que gera 
+        o evento para que uma chuva de cometa (ou meteoro) 
+        seja lançada a cada periodo de tempo.
+    '''
+
     def __init__(self, game):
         self.percent = 0
         self.percent_speed = 8

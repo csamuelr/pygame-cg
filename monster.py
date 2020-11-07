@@ -5,6 +5,11 @@ from random import randint
 
 class Monster(pygame.sprite.Sprite):
 
+	'''
+		Esta classe implementa as múmias. Elas são 
+		as princiáis inimigas no jogo.
+	'''
+
 	def __init__(self, game):
 		super().__init__()
 		self.game = game

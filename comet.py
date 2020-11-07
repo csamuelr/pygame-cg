@@ -6,6 +6,13 @@ from pygame import mixer
 
 class Comet(pygame.sprite.Sprite):
 
+    '''
+        Esta classe implementa o Cometa (ou meteoro)
+        que é lançado a cada periodo de tempo e o player precisa
+        evitar ser atingido por eles. O período de 
+        lançamento de meteooros é deginifo em commet_event.py
+    '''
+
     def __init__(self, comet_evet):
         super().__init__()
         self.image = pygame.image.load(os.path.join('assets', 'comet.png'))
@@ -21,7 +28,7 @@ class Comet(pygame.sprite.Sprite):
 
         if len(self.comet_evet.all_comets) == 0:
             self.comet_evet.reset_percent()
-            self.comet_evet.game.generate_monster(5)
+            self.comet_evet.game.generate_monster(4)
 
     def fall(self):
         

@@ -1,3 +1,10 @@
+'''
+	Este arquivo disponibiliza as definições 
+	das principais propriedade do jogo.
+	Nele também são definidas algumas
+	regras de controle e execução do jogo.
+'''
+
 import pygame 
 import sys
 import os
@@ -14,7 +21,7 @@ if __name__ == '__main__':
 
 	fps = 60
 	frame = pygame.time.Clock()
-	pygame.display.set_caption('Jogo Computação Gráfica')
+	pygame.display.set_caption('Shooter')
 	screen = pygame.display.set_mode((1080,720))
 	background = pygame.image.load(os.path.join('assets', 'bg.jpg'))
 	banner = pygame.image.load(os.path.join('assets', 'banner.png'))
@@ -26,13 +33,13 @@ if __name__ == '__main__':
 	play_button = pygame.transform.scale(play_button, (400,150))
 	play_button_rec = play_button.get_rect()
 	play_button_rec.x = screen.get_width() / 3.33 # 33%
-	play_button_rec.y = screen.get_height() / 1.99
+	play_button_rec.y = screen.get_height() / 1.96
 
 	about_button = pygame.image.load(os.path.join('assets', 'button_about.png'))
 	about_button = pygame.transform.scale(about_button, (400, 150))
 	about_button_rec = about_button.get_rect()
 	about_button_rec.x = screen.get_width() / 3.33
-	about_button_rec.y = screen.get_height() / 1.55
+	about_button_rec.y = screen.get_height() / 1.51
 
 	about_bg = pygame.image.load(os.path.join('assets', 'bg_about.png'))
 	about_bg = pygame.transform.scale(about_bg, (600, 600))

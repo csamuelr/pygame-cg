@@ -9,6 +9,11 @@ from comet_event import CometFallEvent
 
 class Game:
 
+	'''
+		Esta classe implementa o mecanismo de
+		controle de execulçao do jogo
+	'''
+
 	def __init__(self):
 		self.all_players = pygame.sprite.Group()
 		self.all_monsters = pygame.sprite.Group()

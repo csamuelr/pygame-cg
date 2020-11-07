@@ -5,6 +5,12 @@ from pygame import mixer
 
 class Projectile(pygame.sprite.Sprite):
 
+    '''
+        Esta classe implementa um pŕojétil que é lançado
+        pelo Jogador (Player) a fim de se livrar dos 
+        seu inimigos (As múmias).
+    '''
+
     def __init__(self, player):
         super().__init__()
         self.player = player
