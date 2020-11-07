@@ -17,7 +17,8 @@ class Game:
 		self.comet_event = CometFallEvent(self)
 		self.pressed = {}
 		self.is_playing = False
-				
+		self.is_about = False
+						
 	def game_over(self):
 		
 		mixer.Sound(os.path.join('assets', 'sounds', 'game_over.ogg')).play()
@@ -55,7 +56,6 @@ class Game:
 		
 		elif self.pressed.get(pygame.K_LEFT) and self.player.rect.x > 0:
 			self.player.move_left()
-
 
 	def check_collision(self, sprit, group):
 		# 3o param checks if the entity dies with the collision 

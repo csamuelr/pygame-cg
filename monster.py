@@ -15,7 +15,7 @@ class Monster(pygame.sprite.Sprite):
 		self.rect = self.image.get_rect()
 		self.rect.x = 1000 + randint(0, 400)
 		self.rect.y = 540
-		self.velocity = randint(5, 8)
+		self.velocity = randint(7, 12)
 		self.current_image = 0
 		self.animate_images = self.get_images()
 

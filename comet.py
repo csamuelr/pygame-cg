@@ -9,11 +9,11 @@ class Comet(pygame.sprite.Sprite):
     def __init__(self, comet_evet):
         super().__init__()
         self.image = pygame.image.load(os.path.join('assets', 'comet.png'))
-        self.image = pygame.transform.scale(self.image, (50,50))
+        self.image = pygame.transform.scale(self.image, (80,80))
         self.rect = self.image.get_rect()
         self.rect.x = randint(20, 800)
         self.rect.y = - randint(0, 800)
-        self.velocity = randint(5, 8)
+        self.velocity = randint(4, 7)
         self.comet_evet = comet_evet
         
     def remove(self):
